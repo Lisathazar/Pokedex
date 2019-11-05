@@ -1,0 +1,7 @@
+<div class ='container'>
+    <div *ngFor = "let p of pokemons">
+        <h2>{{ p.name }}</h2>
+        <img [src] = "p.imgUrl" class = 'imgPokemon'/><br>
+        <button (click) = 'showDetails(p)' class= 'button'>View more..</button>
+    </div>
+</div>

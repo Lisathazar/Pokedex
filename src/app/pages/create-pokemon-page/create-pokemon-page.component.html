@@ -1,0 +1,20 @@
+<h1>Create a new Pokemon</h1>
+
+<form (submit)="myForm.valid && sendPokemon()"#myForm="ngForm">
+  <div>
+    <label>Name :</label><br>
+    <input [(ngModel)]="pokemon.name" name="name" type="text" required/>
+  </div>
+
+  <div>
+    <label>Image :</label><br>
+    <input [(ngModel)]="pokemon.imgUrl" name ="imgUrl" type="text" required/>
+  </div>
+
+  <div>
+    <label>Description :</label><br>
+    <input [(ngModel)]="pokemon.description" name ="description" type="text"/>
+  </div><br>
+
+  <button>Create</button>
+</form>
